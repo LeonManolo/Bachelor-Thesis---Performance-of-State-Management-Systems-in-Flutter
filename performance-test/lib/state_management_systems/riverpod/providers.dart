@@ -2,6 +2,16 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:performance_test/shared/models/models.dart';
 import 'package:performance_test/shared/repositories/repositories.dart';
 
+/// ===========================================================================
+/// Author: Leon-Manolo Stiller
+/// Date: 14.06.2024
+/// Description: Provider declarations
+///
+/// This code is based on the work of Remi Rousselet.
+/// Original code can be found at: https://riverpod.dev/docs/introduction/getting_started
+///
+/// ===========================================================================
+
 final todoListProvider =
     NotifierProvider<TodoListNotifier, List<TodoItem>>(TodoListNotifier.new);
 

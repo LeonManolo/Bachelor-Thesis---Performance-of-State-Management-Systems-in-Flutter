@@ -1,3 +1,16 @@
+# ===========================================================================
+# Script: CPU/GPU Locking
+# Author: Leon-Manolo Stiller
+# Date: 14.06.2024
+# Description: Script to scale lock test device (Samsung Galaxy S10)
+# Description: Script to scale lock test device (Samsung Galaxy S10)
+#
+# This script is based on the work of Filip Hracek.
+# Original code can be found at: https://medium.com/flutter/performance-testing-of-flutter-apps-df7669bb7df7
+#
+# ===========================================================================
+
+
 #!/usr/bin/env bash
 
 # This is adapted from Skia's recipe at:

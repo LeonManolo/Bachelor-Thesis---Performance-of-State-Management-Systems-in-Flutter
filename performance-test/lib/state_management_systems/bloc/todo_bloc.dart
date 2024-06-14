@@ -1,11 +1,9 @@
 import 'dart:async';
 
-import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:performance_test/shared/models/models.dart';
-import 'package:performance_test/shared/repositories/fake_todo_repository.dart';
 import 'package:performance_test/shared/repositories/repositories.dart';
 import 'package:performance_test/state_management_systems/bloc/bloc.dart';
 
@@ -13,6 +11,15 @@ part 'todo_event.dart';
 
 part 'todo_state.dart';
 
+/// ===========================================================================
+/// Author: Leon-Manolo Stiller
+/// Date: 14.06.2024
+/// Description: Provider declarations
+///
+/// This code is based on the work of Felix Angelov.
+/// Original code can be found at: https://bloclibrary.dev/tutorials/flutter-todos/
+///
+/// ===========================================================================
 class TodoBloc extends Bloc<TodoEvent, TodoState> {
   TodoBloc({TodoRepository? todoRepository})
       : _todoRepository = todoRepository ?? FakeTodoRepository(),
